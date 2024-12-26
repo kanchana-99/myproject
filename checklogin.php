@@ -56,7 +56,7 @@ try{
     if($queryt-> rowCount() > 0){
         echo "<script type='text/javascript'>";
         echo "alert('เข้าสู่ระบบเรียบร้อยแล้ว!');";
-        echo "document.location='welcome.php';";
+        echo "document.location='index.php';";
         echo "</script>";
     }else {
         echo "<script type='text/javascript'>";
