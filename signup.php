@@ -130,7 +130,7 @@ if(isset($_POST['signup'])){
 =======
 <?php
 include("include/config.php");
-//error_reporting(0);
+error_reporting(0);
 
 if(isset($_POST['signup'])){
     $fullname = $_POST['fullname'];
@@ -171,7 +171,7 @@ if(isset($_POST['signup'])){
         }
    }else{
         echo "<script type='text/javascript'>";
-        echo "alert('มีชื่อผู้ใช้หรืออีเมลนี้อยู่แล้ว กรุณาลองใหม่อีกครั้ง');";
+        echo "alert('มีชื่อผู้ใช้งานหรืออีเมลนี้อยู่แล้ว กรุณาลองใหม่อีกครั้ง');";
         echo "</script>";
    }
 }
@@ -200,10 +200,10 @@ if(isset($_POST['signup'])){
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.php">Home</a>
+          <a class="nav-link" href="index.php">หน้าแรก</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.php">Login</a>
+          <a class="nav-link" href="login.php">เข้าสู่ระบบ</a>
         </li>  
       </ul>
     </div>  
@@ -215,12 +215,12 @@ if(isset($_POST['signup'])){
       <h2>สมัครสมาชิก</h2>
       <form action="#" method="post" >
         <div class="form-group">
-          <label for="fullname">ชื่อ:</label>
-          <input type="text" class="form-control" id="fullname" placeholder="พิมพ์ชื่อที่นี่" name="fullname" required>
+          <label for="fullname">ชื่อ-นามสกุล:</label>
+          <input type="text" class="form-control" id="fullname" placeholder="พิมพ์ชื่อและนามสกุลที่นี่" name="fullname" required>
         </div>
         <div class="form-group">
           <label for="username">ชื่อผู้ใช้:</label>
-          <input type="text" class="form-control" id="username" placeholder="พิมพ์ชื่อผู้ใช้ที่นี่" name="username" required>
+          <input type="text" class="form-control" id="username" placeholder="พิมพ์ชื่อผู้ใช้งานที่นี่" name="username" required>
         </div>
         <div class="form-group">
           <label for="useremail">อีเมลล์:</label>
@@ -228,7 +228,7 @@ if(isset($_POST['signup'])){
         </div>
         <div class="form-group">
           <label for="usermobile">เบอร์โทรศัพท์:</label>
-          <input type="text" maxlength="10" pattern="[0-9]{10}" title="ตัวเลขสิบหลักเท่านั้น" class="form-control" id="usermobile" placeholder="พิมพ์เบอร์โทรศัพท์ที่นี่" name="usermobile" required>
+          <input type="text" maxlength="10" pattern="[0-9]{10}" title="ใช้ตัวเลขสิบหลักเท่านั้น" class="form-control" id="usermobile" placeholder="พิมพ์เบอร์โทรศัพท์ที่นี่" name="usermobile" required>
         </div>
         <div class="form-group">
           <label for="loginpassword">Password:</label>

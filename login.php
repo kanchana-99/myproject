@@ -97,7 +97,7 @@ error_reporting(0);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Login Page</title>
+  <title>เข้าสู่ระบบ ชมรมคนรักแมว</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -122,10 +122,10 @@ error_reporting(0);
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link" href="index.php">หน้าแรก</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="login.php">Login</a>
+        <a class="nav-link" href="login.php">เข้าสู่ระบบ</a>
       </li>  
     </ul>
   </div>  
@@ -138,20 +138,20 @@ error_reporting(0);
         <form action="checklogin.php" method="post"> 
 
           <div class="form-group">
-            <label for="username">UserName:</label>
-            <input type="text" class="form-control" id="username" placeholder="Enter UserName" name="username" required>
+            <label for="username">ชื่อผู้ใช้งาน:</label>
+            <input type="text" class="form-control" id="username" placeholder="พิมพ์ชื่อผู้ใช้งานที่นี่" name="username" required>
           </div>
 
           <div class="form-group">
-            <label for="loginpassword">Password:</label>
-            <input type="password" class="form-control" id="loginpassword" placeholder="Enter password" name="loginpassword" required>
+            <label for="loginpassword">รหัสผ่าน:</label>
+            <input type="password" class="form-control" id="loginpassword" placeholder="พิมพ์รหัสผ่านที่นี่" name="loginpassword" required>
           </div>
           <div class="row">
             <div class="col"></div>
             <div class="col">ถ้าท่านยังไม่ได้สมัครสมาชิก <a href="signup.php">ลงทะเบียนที่นี่</a></div>
             <div class="col"></div>
           </div>  
-          <button type="submit" class="btn btn-success" name="login" id="login">login</button>
+          <button type="submit" class="btn btn-success" name="login" id="login">เข้าสู่ระบบ</button>
 
         </form>
     </div>
