@@ -108,12 +108,14 @@ error_reporting(0);
   <style>
   .fakeimg {
     height: 200px;
-    background: #aaa;
-  }
-  </style>
-
+    background: #aaa;}
+  body {
+    background-color: #faedcd; /* ใส่สีพื้นหลัง */}
+</style>    
 </head>
+
 <body>
+  
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <a class="navbar-brand" href="#">ชมรมคนรักแมว</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -136,34 +138,28 @@ error_reporting(0);
     <div class="col-sm-12">
       <h2>เข้าสู่ระบบ</h2>
         <form action="checklogin.php" method="post"> 
-
           <div class="form-group">
-            <label for="username">ชื่อผู้ใช้งาน:</label>
-            <input type="text" class="form-control" id="username" placeholder="พิมพ์ชื่อผู้ใช้งานที่นี่" name="username" required>
+                <label for="username">ชื่อผู้ใช้งาน:</label>
+                <input type="text" class="form-control" id="username" placeholder="พิมพ์ชื่อผู้ใช้งานที่นี่" name="username" required>
           </div>
 
-          <div class="form-group">
-            <label for="loginpassword">รหัสผ่าน:</label>
-            <input type="password" class="form-control" id="loginpassword" placeholder="พิมพ์รหัสผ่านที่นี่" name="loginpassword" required>
-          </div>
+           <div class="form-group">
+                <label for="loginpassword">รหัสผ่าน:</label>
+                <input type="password" class="form-control" id="loginpassword" placeholder="พิมพ์รหัสผ่านที่นี่" name="loginpassword" required>
+           </div>   
+
           <div class="row">
-            <div class="col"></div>
-            <div class="col">ถ้าท่านยังไม่ได้สมัครสมาชิก <a href="signup.php">ลงทะเบียนที่นี่</a></div>
-            <div class="col"></div>
-          </div>  
+                <div class="col"></div>
+                <div class="col">ถ้าท่านยังไม่ได้สมัครสมาชิก <a href="signup.php">ลงทะเบียนที่นี่</a></div>
+                <div class="col"></div>
+          </div>     
+              
           <button type="submit" class="btn btn-success" name="login" id="login">เข้าสู่ระบบ</button>
 
-        </form>
+            </form>
+        </div>    
+      </div>    
     </div>
-  </div>
-</div>
-
-<style>
-        body {
-            background-color: #facfad; /* ใส่สีพื้นหลัง */
-        }
-</style>
-
 </div>
 
 

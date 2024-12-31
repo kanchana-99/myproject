@@ -190,7 +190,13 @@ if(isset($_POST['signup'])){
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+        body {
+            background-color: #faedcd; /* ใส่สีพื้นหลัง */}
+  
+</style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <a class="navbar-brand" href="#">ชมรมคนรักแมว</a>
@@ -208,6 +214,7 @@ if(isset($_POST['signup'])){
       </ul>
     </div>  
   </nav>
+
 
 <div class="container" style="margin-top:30px">
   <div class="row">
@@ -231,7 +238,7 @@ if(isset($_POST['signup'])){
           <input type="text" maxlength="10" pattern="[0-9]{10}" title="ใช้ตัวเลขสิบหลักเท่านั้น" class="form-control" id="usermobile" placeholder="พิมพ์เบอร์โทรศัพท์ที่นี่" name="usermobile" required>
         </div>
         <div class="form-group">
-          <label for="loginpassword">Password:</label>
+          <label for="loginpassword">รหัสผ่าน:</label>
           <input type="password" class="form-control" id="loginpassword" placeholder="พิมพ์รหัสผ่านที่นี่" name="loginpassword" required>
         </div>
         <div class="form-group form-check">
@@ -243,14 +250,8 @@ if(isset($_POST['signup'])){
       </form>
     </div>
       </div>
-    </div>
 
-<style>
-        body {
-            background-color: #facfad; /* ใส่สีพื้นหลัง */
-        }
-</style>
-
+</div>
 
 
 </body>
